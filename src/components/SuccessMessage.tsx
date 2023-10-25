@@ -9,9 +9,9 @@ export default function SuccessMessage({
   goBack: () => void;
 }) {
   return (
-    <div className="bg-white text-neutral p-16 w-full md:w-[30rem] md:rounded-3xl flex items-center overflow-hidden">
+    <div className="bg-white text-neutral p-16 w-full h-full md:h-auto md:w-[30rem] md:rounded-3xl flex flex-col items-center overflow-hidden">
       <Slide direction="left" in={true} timeout={500}>
-        <div className="gap-4 flex flex-col">
+        <div className="gap-4 flex flex-col h-full">
           <div>
             <img src={checksvg} alt="" width={64} />
           </div>
@@ -25,12 +25,15 @@ export default function SuccessMessage({
             the button inside to confirm your subscription.
           </p>
 
-          <button
+        
+          <div className="h-full w-full flex flex-col justify-end">
+           <button
             onClick={goBack}
-            className= "text-white font-bold justify-end bg-neutral py-4 rounded-md hover:bg-gradient-to-l from-primary to-[#ff517b]"
+            className= {`text-white flex
+             md:relative md:bottom-0 md:w-full justify-center font-bold bg-neutral py-4 rounded-md hover:bg-gradient-to-l from-primary to-[#ff517b]`}
           >
             Dismiss message
-          </button>
+          </button></div>
         </div>
       </Slide>
     </div>

@@ -23,7 +23,7 @@ export default function App() {
   return (
     <div className="min-h-screen grid place-items-center bg-neutral-dark">
       {step === "form" && (
-        <div className="bg-white max-w-[55rem] flex flex-col-reverse md:flex-row md:rounded-3xl  text-neutral place-content-center md:p-6">
+        <div className="bg-white max-w-[55rem] w-full h-full md:h-auto flex flex-col-reverse md:flex-row md:rounded-3xl  text-neutral place-content-center md:p-6">
           <LeftForm goToMessage={goToMessage}></LeftForm>
           <div id="rightImage" className="md:w-1/2 md:h-full">
             <img
