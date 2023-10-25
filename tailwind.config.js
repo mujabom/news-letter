@@ -8,7 +8,7 @@ export default {
       },
       screens: {
         sm: "450px",
-        md: "600px", // Change this to your desired value
+        md: "768px", // Change this to your desired value
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
